@@ -2,7 +2,7 @@ def first_challenge
   contacts = {
     "Jon Snow" => {
       name: "Jon",
-      email: "jon_snow@thewall.we", 
+      email: "jon_snow@thewall.we",
       favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
       knows: nil
     },
@@ -14,9 +14,15 @@ def first_challenge
   }
 
   #your code here
-
-
+  new_icecream_array = []
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].each do |ice_cream|
+    if ice_cream == 'strawberry'
+      puts "FOUND IT"
+    else
+      new_icecream_array << ice_cream
+    end   
+  end
+  contacts["Freddy Mercury"][:favorite_icecream_flavors] = new_icecream_array
   #remember to return your newly altered contacts hash!
   contacts
 end
-
