@@ -7,7 +7,12 @@ def second_challenge
   }
 
   #code your solution here!
+#  groceries_list = []
+  #groceries.each do |my_groceries|
+#    groceries_list += my_groceries
+#  end
 
-  
+  # groceries_list
 
+  groceries.values.flatten
 end
